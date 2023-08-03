@@ -86,7 +86,8 @@
 //})
 describe('Automation exercise',() => {
 })    
-
+//beforeEach(() => {
+  //cy.visit('http://automationexercise.com') })
 it('Test Case 1: Register User', ()=>{
 cy.visit('http://automationexercise.com')
 cy.get('.logo').should('be.visible')
