@@ -8,8 +8,8 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-import 'cypress-xpath'
-import 'cypress-file-upload'
+ import 'cypress-xpath'
+// import 'cypress-file-upload'
 //
 // -- This is a parent command --
 //Cypress.Commands.add('login', (email, password) => { ... })
@@ -40,13 +40,13 @@ Cypress.Commands.add('UserLog', (loginLocator,login,passwordLocator,password,log
     cy.get(loginLocator).type(login)
     cy.get(passwordLocator).type(password)
     cy.get(loginButton).click()
-
-
 })
-Cypress.Commands.add('userRegister', (registerLocator,registerName,emailLocator,registerEmail,signUpButton) => {
-    cy.get(registerLocator).type(registerName)
-    cy.get(emailLocator).type(registerEmail)
-    cy.get(signUpButton).click()
+
+// })
+// Cypress.Commands.add('userRegister', (registerLocator,registerName,emailLocator,registerEmail,signUpButton) => {
+//     cy.get(registerLocator).type(registerName)
+//     cy.get(emailLocator).type(registerEmail)
+//     cy.get(signUpButton).click()
 
 
-})
+// })mp
